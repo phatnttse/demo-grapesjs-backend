@@ -1,5 +1,11 @@
-﻿
-using API.Core;
+﻿using Demo_Grapesjs.Core.DBContext;
+using Demo_Grapesjs.Core.Mapper;
+using Demo_Grapesjs.Models;
+using Demo_Grapesjs.Repositories;
+using Demo_Grapesjs.Services;
+using Demo_Grapesjs.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Demo_Grapesjs
 {
@@ -24,7 +30,13 @@ namespace Demo_Grapesjs
                         .AllowAnyMethod()
                         .AllowAnyHeader());
             });
+            builder.Services.AddAutoMapper(typeof(MappingProfiles));
             builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("Cloudinary"));
+            builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IImageService, ImageService>();
+            builder.Services.AddScoped<INameCardTemplateService, NameCardTemplateService>();
+            builder.Services.AddScoped<IVideoService, VideoService>();
 
             var app = builder.Build();
 
@@ -41,6 +53,8 @@ namespace Demo_Grapesjs
             app.UseAuthorization();
 
             app.MapControllers();
+
+            app.UseStaticFiles();
 
             app.Run();
         }

@@ -1,4 +1,4 @@
-﻿namespace API.Core
+﻿namespace Demo_Grapesjs.Models
 {
     public class CloudinarySettings
     {

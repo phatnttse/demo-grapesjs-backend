@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo-Grapesjs", "Demo-Grapesjs\Demo-Grapesjs.csproj", "{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo-Grapesjs", "Demo-Grapesjs\Demo-Grapesjs.csproj", "{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
