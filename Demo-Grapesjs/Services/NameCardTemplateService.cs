@@ -4,6 +4,7 @@ using Demo_Grapesjs.Entities;
 using Demo_Grapesjs.Repositories;
 using Demo_Grapesjs.Services.Interfaces;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using System.Globalization;
 using System.Text;
 
@@ -20,36 +21,71 @@ namespace Demo_Grapesjs.Services
             _unitOfWork = unitOfWork;
             _mapper = mapper;
             _hostingEnvironment = hostingEnvironment;
-
         }
-        public async Task<NameCardTemplate> CreateNameCardTemplate(NameCardTemplateDto nameCardTemplateDto)
+
+        // Thêm hoặc cập nhật template
+        public async Task<NameCardTemplate> NameCardTemplate_InsertUpdate(InsertUpdateNameCardTemplateDto insertUpdateNameCardTemplate, HttpContext httpContext)
         {
-            if (nameCardTemplateDto == null) throw new ArgumentNullException(nameof(nameCardTemplateDto));
+            if (insertUpdateNameCardTemplate == null) throw new ArgumentNullException(nameof(insertUpdateNameCardTemplate));
 
-            var nameCardTemplateDirectory = Path.Combine(_hostingEnvironment.WebRootPath, "files");
-            if (!Directory.Exists(nameCardTemplateDirectory))
+            if (string.IsNullOrEmpty(insertUpdateNameCardTemplate.Id))
             {
-                Directory.CreateDirectory(nameCardTemplateDirectory);
+                var nameCardTemplateDirectory = Path.Combine(_hostingEnvironment.WebRootPath, "files");
+                if (!Directory.Exists(nameCardTemplateDirectory))
+                {
+                    Directory.CreateDirectory(nameCardTemplateDirectory);
+                }
+
+                // Normalize the name by converting to lowercase, removing spaces, and adding a random 8-digit number
+                var normalizedName = NormalizeName(insertUpdateNameCardTemplate.Name);
+                var randomSuffix = new Random().Next(10000000, 99999999); // Generate an 8-digit random number
+                var uniqueName = $"{normalizedName}-{randomSuffix}";
+
+                // Create the HTML file name with the unique name
+                var fileName = $"{uniqueName}.html";
+                var filePath = Path.Combine(nameCardTemplateDirectory, fileName);
+
+                // Save HTML content to file
+                await File.WriteAllTextAsync(filePath, insertUpdateNameCardTemplate.Content, Encoding.UTF8);
+
+                NameCardTemplate nameCardTemplate = _mapper.Map<NameCardTemplate>(insertUpdateNameCardTemplate);
+                var hostUrl = $"{httpContext.Request.Scheme}://{httpContext.Request.Host}";
+
+                nameCardTemplate.Url = $"{hostUrl}/files/{fileName}"; // Save relative path
+
+                NameCardTemplate newTemplate = await _unitOfWork.GetRepository<NameCardTemplate>().CreateAsync(nameCardTemplate);
+                await _unitOfWork.SaveChangesAsync();
+                return newTemplate;
+
             }
+            else
+            {
+                // Lấy trang hiện tại từ cơ sở dữ liệu
+                NameCardTemplate existingTemplate = await _unitOfWork.GetRepository<NameCardTemplate>().GetByIdAsync(insertUpdateNameCardTemplate.Id)
+                    ?? throw new Exception("Template not found");
 
-            // Normalize the name by converting to lowercase, removing spaces, and adding a random 8-digit number
-            var normalizedName = NormalizeName(nameCardTemplateDto.Name);
-            var randomSuffix = new Random().Next(10000000, 99999999); // Generate an 8-digit random number
-            var uniqueName = $"{normalizedName}-{randomSuffix}";
+                // Lấy tên file từ URL
+                var fileName = Path.GetFileName(new Uri(existingTemplate.Url).AbsolutePath);
+                var filePath = Path.Combine(_hostingEnvironment.WebRootPath, "files", fileName);
 
-            // Create the HTML file name with the unique name
-            var fileName = $"{uniqueName}.html";
-            var filePath = Path.Combine(nameCardTemplateDirectory, fileName);
+                // Kiểm tra xem file có tồn tại hay không
+                if (!File.Exists(filePath))
+                {
+                    throw new FileNotFoundException($"File not found at path: {filePath}");
+                }
 
-            // Save HTML content to file
-            await File.WriteAllTextAsync(filePath, nameCardTemplateDto.Content);
+                // Ghi đè nội dung mới vào file
+                await File.WriteAllTextAsync(filePath, insertUpdateNameCardTemplate.Content, Encoding.UTF8);
 
-            NameCardTemplate nameCardTemplate = _mapper.Map<NameCardTemplate>(nameCardTemplateDto);
-            nameCardTemplate.Url = $"/files/{fileName}"; // Save relative path
+                // Cập nhật các thuộc tính khác của template
+                existingTemplate.Name = insertUpdateNameCardTemplate.Name;
+                existingTemplate.Thumbnail = insertUpdateNameCardTemplate.Thumbnail;
 
-            NameCardTemplate newTemplate = await _unitOfWork.GetRepository<NameCardTemplate>().CreateAsync(nameCardTemplate);
-            await _unitOfWork.SaveChangesAsync();
-            return newTemplate;
+                await _unitOfWork.SaveChangesAsync();
+
+                return existingTemplate;
+
+            }
         }
 
         // Helper method to normalize the name by removing accents, converting to lowercase, and replacing spaces with hyphens
@@ -84,49 +120,24 @@ namespace Demo_Grapesjs.Services
             return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
         }
 
-
-        public async Task<IEnumerable<NameCardTemplate>> GetNameCardTemplates()
+        // Lấy tất cả template
+        public async Task<IEnumerable<NameCardTemplate>> NameCardTemplate_GetAll()
         {
             return await _unitOfWork.GetRepository<NameCardTemplate>().GetAllAsync();
         }
 
-        public async Task<NameCardTemplate> GetNameCardTemplateById(Guid id)
+        // Lấy template theo id
+        public async Task<NameCardTemplate> NameCardTemplate_GetById(string id)
         {
             NameCardTemplate existingTemplate = await _unitOfWork.GetRepository<NameCardTemplate>().GetByIdAsync(id) ?? throw new Exception("Template not found");
             return existingTemplate;
         }
 
-        public Task DeleteNameCardTemplate(Guid id)
+        // Xóa template
+        public Task NameCardTemplate_Delete(string id)
         {
             throw new NotImplementedException();
         }
-
-        public async Task<NameCardTemplate> UpdateNameCardTemplate(UpdateNameCardTemplateDto updateNameCardTemplateDto)
-        {
-            // Lấy trang hiện tại từ cơ sở dữ liệu
-            NameCardTemplate existingTemplate = await _unitOfWork.GetRepository<NameCardTemplate>().GetByIdAsync(updateNameCardTemplateDto.Id)
-                ?? throw new Exception("Template not found");
-
-            // Lấy đường dẫn file từ trường Content 
-            string filePath = Path.Combine(_hostingEnvironment.WebRootPath, existingTemplate.Url.TrimStart('/'));
-
-            // Kiểm tra xem file có tồn tại hay không
-            if (!File.Exists(filePath))
-            {
-                throw new FileNotFoundException($"File not found at path: {filePath}");
-            }
-
-            // Ghi đè nội dung mới vào file
-            await File.WriteAllTextAsync(filePath, updateNameCardTemplateDto.Content);
-
-            existingTemplate.Name = updateNameCardTemplateDto.Name;
-            existingTemplate.Thumbnail = updateNameCardTemplateDto.Thumbnail;
-
-            // Lưu thay đổi vào cơ sở dữ liệu
-            await _unitOfWork.SaveChangesAsync();
-
-            return existingTemplate;
-        }
-
+ 
     }
 }

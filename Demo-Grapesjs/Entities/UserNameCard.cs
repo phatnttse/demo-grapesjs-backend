@@ -4,11 +4,12 @@ namespace Demo_Grapesjs.Entities
 {
     public class UserNameCard : BaseEntity
     {
-        [Key]
-        public Guid Id { get; set; }
-        public Guid UserId { get; set; }
+        public string Slug { get; set; } = string.Empty;
+        public string LinkUrl { get; set; } = string.Empty;
+        public string QRCodeUrl { get; set; } = string.Empty;
+        public string UserId { get; set; }
         public User? User { get; set; }
-        public Guid NameCardTemplateId { get; set; }
+        public string NameCardTemplateId { get; set; }
         public NameCardTemplate? NameCardTemplate { get; set; }
 
     }

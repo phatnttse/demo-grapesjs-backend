@@ -10,7 +10,10 @@ namespace Demo_Grapesjs.Core.Mapper
         {
             CreateMap<ImageDto, Image>().ReverseMap();
             CreateMap<NameCardTemplateDto, NameCardTemplate>().ReverseMap();
-            CreateMap<UpdateNameCardTemplateDto, NameCardTemplate>().ReverseMap();
+            CreateMap<InsertUpdateNameCardTemplateDto, NameCardTemplate>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
+            CreateMap<InsertUpdateUserDto, User>()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
         }
     }
 }

@@ -26,7 +26,6 @@ D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\obj\Debug\net8.0\staticwebassets\msbu
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Demo-Grapesjs.props
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\obj\Debug\net8.0\scopedcss\bundle\Demo-Grapesjs.styles.css
-D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\obj\Debug\net8.0\Demo-Grapesjs.csproj.CopyComplete
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\obj\Debug\net8.0\Demo-Grapesjs.dll
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\obj\Debug\net8.0\refint\Demo-Grapesjs.dll
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\obj\Debug\net8.0\Demo-Grapesjs.pdb
@@ -72,7 +71,6 @@ D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\System.Memory.Data.d
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\System.Runtime.Caching.dll
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\System.Security.Permissions.dll
-D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\System.Text.Json.dll
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\System.Windows.Extensions.dll
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -140,3 +138,13 @@ D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\runtimes\win\lib\net
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\AutoMapper.dll
 D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\Demo-Grapesjs.staticwebassets.runtime.json
+D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\Handlebars.dll
+D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\obj\Debug\net8.0\Demo-Gra.DF847F6F.Up2Date
+D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\QRCoder.dll
+D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\Serilog.dll
+D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\Serilog.Extensions.Logging.File.dll
+D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\Serilog.Sinks.Async.dll
+D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\Demo-F2tech\Demo-Grapesjs\Demo-Grapesjs\bin\Debug\net8.0\Serilog.Sinks.RollingFile.dll

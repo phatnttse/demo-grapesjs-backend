@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Demo-Grapesjs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+910dd9ec84b0e30b069ba2cb72126c3e36254cf6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13ab39486c8b2652739b57a392ac67ba3f38cf8e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Demo-Grapesjs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Demo-Grapesjs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

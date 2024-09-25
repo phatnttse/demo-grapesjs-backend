@@ -2,6 +2,7 @@
 using CloudinaryDotNet.Actions;
 using Demo_Grapesjs.Dtos;
 using Demo_Grapesjs.Models;
+using Demo_Grapesjs.Responses;
 using Demo_Grapesjs.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -33,30 +34,46 @@ namespace Demo_Grapesjs.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        [HttpGet("assets")]
+        /// <summary>
+        /// Lấy danh sách hình ảnh
+        /// </summary>
+        /// <param name="pageNumber"></param>
+        /// <param name="pageSize"></param>
+        /// <returns></returns>
+        [HttpGet("Image_GetAll")]
         [AllowAnonymous]
-        public async Task<IActionResult> GetAssets()
+        [ProducesResponseType(typeof(PagedResponse<ImageDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Image_GetAll(
+         [FromQuery] int pageNumber = 1,
+         [FromQuery] int pageSize = 10)
         {
             try
             {
-                var assets = await _imageService.GetImages();
-                return Ok(assets);
-
+                var pagedResponse = await _imageService.Image_GetAll(pageNumber, pageSize);
+                return Ok(pagedResponse);
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
-
             }
         }
-        [HttpGet("videos")]
+
+
+        /// <summary>
+        /// Lấy danh sách video
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("Video_GetAll")]
         [AllowAnonymous]
-        public async Task<IActionResult> GetVideos()
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Video_GetAll()
         {
             try
             {
                 // Fetch videos from the database
-                var videos = await _videoService.GetVideos();
+                var videos = await _videoService.Video_GetAll();
 
                 // Format the videos to the desired structure
                 var videoList = videos.Select(video => new
@@ -70,7 +87,6 @@ namespace Demo_Grapesjs.Controllers
                     {
                         publishedAt = video.CreatedAt, 
                         title = video.Title, 
-                        description = video.Description, 
                         thumbnails = new
                         {
                             @default = new
@@ -102,10 +118,16 @@ namespace Demo_Grapesjs.Controllers
             }
         }
 
-
-        [HttpPost("upload-cloudinary")]
+        /// <summary>
+        /// Upload file ảnh lên cloudinary
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
+        [HttpPost("Cloudinary_UploadFile")]
         [AllowAnonymous]
-        public async Task<IActionResult> UploadFileCloudinary([FromForm] IFormFile file)
+        [ProducesResponseType(typeof(ImageDto), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Cloudinary_UploadFile([FromForm] IFormFile file)
         {
             try
             {
@@ -128,7 +150,7 @@ namespace Demo_Grapesjs.Controllers
                 }
 
                 ImageDto imageDto = new ImageDto { Src = uploadResult.SecureUrl.ToString(), Type = "image", Width = "350", Height = "250" };
-                var response = await _imageService.CreateImage(imageDto);
+                var response = await _imageService.Image_InsertUpdate(imageDto);
 
                 return Ok(response);
             }
@@ -137,9 +159,18 @@ namespace Demo_Grapesjs.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        [HttpPost("upload")]
+
+
+        /// <summary>
+        /// Upload hình ảnh vào wwwrooot/images
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
+        [HttpPost("Image_Upload")]
         [AllowAnonymous]
-        public async Task<IActionResult> UploadFile([FromForm] IFormFile file)
+        [ProducesResponseType(typeof(ImageDto), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Image_Upload([FromForm] IFormFile file)
         {
             if (file == null || file.Length == 0)
             {
@@ -167,7 +198,7 @@ namespace Demo_Grapesjs.Controllers
                 var iamgePath = $"{baseUrl}/images/{file.FileName}";
 
                 ImageDto imageDto = new ImageDto { Src = iamgePath, Type = "image", Width = "350", Height = "250" };
-                var response = await _imageService.CreateImage(imageDto);
+                var response = await _imageService.Image_InsertUpdate(imageDto);
 
                 return Ok(response);
 
@@ -178,12 +209,21 @@ namespace Demo_Grapesjs.Controllers
             }
         }
 
-        [HttpPost("upload-video")]
+
+        /// <summary>
+        /// Upload video vào wwwroot/videos
+        /// </summary>
+        /// <param name="videoFile"></param>
+        /// <param name="title"></param>
+        /// <param name="poster"></param>
+        /// <returns></returns>
+        [HttpPost("Video_Upload")]
         [AllowAnonymous]
-        public async Task<IActionResult> UploadVideo(
+        [ProducesResponseType(typeof(Entities.Video), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Video_Upload(
                [FromForm] IFormFile videoFile,
                [FromForm] string title,
-               [FromForm] string description,
                [FromForm] string poster)
         {
             try
@@ -222,13 +262,58 @@ namespace Demo_Grapesjs.Controllers
                     Width = 400, 
                     Height = 700,
                     Title = title,
-                    Description = description
                 };
 
 
-                var newVideo = await _videoService.CreateVideo(video);
+                var newVideo = await _videoService.Video_InsertUpdate(video);
 
                 return Ok(newVideo);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+        /// <summary>
+        /// Xoá video theo id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete("Video_Delete/{id}")]
+        [AllowAnonymous]
+        [ProducesResponseType(typeof(Entities.Video), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Video_Delete([FromRoute] string id)
+        {
+            try
+            {
+                var existingVideo = await _videoService.Video_Delete(id);
+                return Ok(existingVideo);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+        /// <summary>
+        /// Xoá hình ảnh theo id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete("Image_Delete/{id}")]
+        [AllowAnonymous]
+        [ProducesResponseType(typeof(Entities.Image), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Image_Delete([FromRoute] string id)
+        {
+            try
+            {
+                var existingImage = await _imageService.Image_Delete(id);
+                return Ok(existingImage);
             }
             catch (Exception ex)
             {

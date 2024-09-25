@@ -14,7 +14,7 @@ namespace Demo_Grapesjs.Repositories
 
         public async Task<IEnumerable<T>> GetAllAsync() => await _context.Set<T>().ToListAsync();
 
-        public async Task<T> GetByIdAsync(Guid id) => await _context.Set<T>().FindAsync(id);
+        public async Task<T> GetByIdAsync(string id) => await _context.Set<T>().FindAsync(id);
 
         public Task<T> CreateAsync(T entity)
         {
@@ -22,7 +22,7 @@ namespace Demo_Grapesjs.Repositories
             return Task.FromResult(entity);
         }
 
-        public async Task DeleteAsync(Guid id)
+        public async Task DeleteAsync(string id)
         {
             var entity = await GetByIdAsync(id);
             if (entity != null)
@@ -37,6 +37,18 @@ namespace Demo_Grapesjs.Repositories
 
         public IQueryable<T> GetQueryable() => _context.Set<T>();
 
+        public async Task<int> CountAsync()
+        {
+            return await _context.Set<T>().CountAsync();
+        }
+
+        public async Task<IEnumerable<T>> GetPagedAsync(int pageNumber, int pageSize)
+        {
+            return await _context.Set<T>()
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+        }
 
     }
 }

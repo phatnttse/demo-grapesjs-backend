@@ -33,5 +33,43 @@ namespace Demo_Grapesjs.Core.DBContext
                 .WithOne(unc => unc.NameCardTemplate)
                 .HasForeignKey(unc => unc.NameCardTemplateId); // Khóa ngoại trong UserNameCard
         }
+
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            AddAuditInfo();
+            return base.SaveChangesAsync(cancellationToken);
+        }
+
+        public override Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess,
+            CancellationToken cancellationToken = default)
+        {
+            AddAuditInfo();
+            return base.SaveChangesAsync(acceptAllChangesOnSuccess, cancellationToken);
+        }
+
+        private void AddAuditInfo()
+        {
+
+            var modifiedEntries = ChangeTracker.Entries()
+                .Where(x => x.Entity is BaseEntity &&
+                           (x.State == EntityState.Added || x.State == EntityState.Modified));
+
+            foreach (var entry in modifiedEntries)
+            {
+                var entity = (BaseEntity)entry.Entity;
+                var now = DateTime.UtcNow;
+
+                if (entry.State == EntityState.Added)
+                {
+                    entity.CreatedAt = now;
+                }
+                else
+                {
+                    base.Entry(entity).Property(x => x.CreatedAt).IsModified = false;
+                }
+
+                entity.UpdatedAt = now;
+            }
+        }
     }
-    }
+}

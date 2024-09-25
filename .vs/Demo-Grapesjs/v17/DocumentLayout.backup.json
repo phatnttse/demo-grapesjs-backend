@@ -1,0 +1,627 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Demo-F2tech\\Demo-Grapesjs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\services\\usernamecardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\services\\usernamecardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\controllers\\usernamecardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\controllers\\usernamecardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\controllers\\namecardtemplatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\controllers\\namecardtemplatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\helper\\qrcodegeneratorhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\helper\\qrcodegeneratorhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\migrations\\20240916165236_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\migrations\\20240916165236_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\migrations\\20240920023829_update_video_entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\migrations\\20240920023829_update_video_entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\controllers\\grapesjscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\controllers\\grapesjscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\services\\imageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\entities\\video.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\entities\\video.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\services\\interfaces\\inamecardtemplateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\services\\interfaces\\inamecardtemplateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\services\\interfaces\\iusernamecardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\services\\interfaces\\iusernamecardservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\services\\videoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\services\\videoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\core\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\core\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\core\\mapper\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\core\\mapper\\mappingprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\services\\interfaces\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\services\\interfaces\\iimageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\dtos\\imagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\dtos\\imagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\entities\\namecardtemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\entities\\namecardtemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\services\\interfaces\\ivideoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\services\\interfaces\\ivideoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\entities\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\entities\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\entities\\usernamecard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\entities\\usernamecard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\dtos\\insertupdateusernamecarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\dtos\\insertupdateusernamecarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\responses\\pagedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\responses\\pagedresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\dtos\\insertupdatenamecardtemplatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\dtos\\insertupdatenamecardtemplatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\dtos\\insertupdateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\dtos\\insertupdateuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\dtos\\namecardtemplatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\dtos\\namecardtemplatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|d:\\demo-f2tech\\demo-grapesjs\\demo-grapesjs\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8DA8BF2-6333-4EA1-BEDE-104C35E170CB}|Demo-Grapesjs\\Demo-Grapesjs.csproj|solutionrelative:demo-grapesjs\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2064750209:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2125798652:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserNameCardService.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\UserNameCardService.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Services\\UserNameCardService.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\UserNameCardService.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Services\\UserNameCardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T15:12:00.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GrapesjsController.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Controllers\\GrapesjsController.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Controllers\\GrapesjsController.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Controllers\\GrapesjsController.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Controllers\\GrapesjsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcBAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T07:42:38.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "QRCodeGeneratorHelper.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Helper\\QRCodeGeneratorHelper.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Helper\\QRCodeGeneratorHelper.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Helper\\QRCodeGeneratorHelper.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Helper\\QRCodeGeneratorHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T03:19:04.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NameCardTemplateController.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Controllers\\NameCardTemplateController.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Controllers\\NameCardTemplateController.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Controllers\\NameCardTemplateController.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Controllers\\NameCardTemplateController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T15:19:18.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserNameCardController.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Controllers\\UserNameCardController.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Controllers\\UserNameCardController.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Controllers\\UserNameCardController.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Controllers\\UserNameCardController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAIBJwCsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T14:46:13.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\appsettings.json",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\appsettings.json",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\appsettings.json",
+              "RelativeToolTip": "Demo-Grapesjs\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-16T16:51:24.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Program.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Program.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Program.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T04:14:38.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20240920023829_Update_Video_Entity.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Migrations\\20240920023829_Update_Video_Entity.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Migrations\\20240920023829_Update_Video_Entity.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Migrations\\20240920023829_Update_Video_Entity.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Migrations\\20240920023829_Update_Video_Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T01:24:49.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Services\\UserService.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\UserService.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T15:01:45.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T15:01:41.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20240916165236_Initial.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Migrations\\20240916165236_Initial.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Migrations\\20240916165236_Initial.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Migrations\\20240916165236_Initial.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Migrations\\20240916165236_Initial.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAkwJQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T02:36:02.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "INameCardTemplateService.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\Interfaces\\INameCardTemplateService.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Services\\Interfaces\\INameCardTemplateService.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\Interfaces\\INameCardTemplateService.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Services\\Interfaces\\INameCardTemplateService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T15:21:08.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IUserNameCardService.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\Interfaces\\IUserNameCardService.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Services\\Interfaces\\IUserNameCardService.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\Interfaces\\IUserNameCardService.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Services\\Interfaces\\IUserNameCardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T15:10:31.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ImageService.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\ImageService.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Services\\ImageService.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\ImageService.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Services\\ImageService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAEBVwDUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T15:03:09.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "VideoService.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\VideoService.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Services\\VideoService.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\VideoService.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Services\\VideoService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwCEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T17:07:47.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Video.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Entities\\Video.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Entities\\Video.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Entities\\Video.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Entities\\Video.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-20T02:35:56.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Core\\DBContext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Core\\DBContext\\AppDbContext.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Core\\DBContext\\AppDbContext.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Core\\DBContext\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T16:58:54.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MappingProfiles.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Core\\Mapper\\MappingProfiles.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Core\\Mapper\\MappingProfiles.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Core\\Mapper\\MappingProfiles.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Core\\Mapper\\MappingProfiles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAUwAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T14:45:36.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IImageService.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\Interfaces\\IImageService.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Services\\Interfaces\\IImageService.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\Interfaces\\IImageService.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Services\\Interfaces\\IImageService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAuwAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T08:31:36.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ImageDto.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Dtos\\ImageDto.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Dtos\\ImageDto.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Dtos\\ImageDto.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Dtos\\ImageDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T03:04:02.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Entities\\User.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Entities\\User.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T14:38:35.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Entities\\BaseEntity.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Entities\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T16:27:54.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "NameCardTemplate.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Entities\\NameCardTemplate.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Entities\\NameCardTemplate.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Entities\\NameCardTemplate.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Entities\\NameCardTemplate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T16:59:08.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IVideoService.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\Interfaces\\IVideoService.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Services\\Interfaces\\IVideoService.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Services\\Interfaces\\IVideoService.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Services\\Interfaces\\IVideoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T08:35:22.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Repositories\\Repository.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Repositories\\Repository.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T16:20:38.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Image.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Entities\\Image.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Entities\\Image.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Entities\\Image.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Entities\\Image.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T16:27:29.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserNameCard.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Entities\\UserNameCard.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Entities\\UserNameCard.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Entities\\UserNameCard.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Entities\\UserNameCard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T15:42:45.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "InsertUpdateUserNameCardDto.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Dtos\\InsertUpdateUserNameCardDto.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Dtos\\InsertUpdateUserNameCardDto.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Dtos\\InsertUpdateUserNameCardDto.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Dtos\\InsertUpdateUserNameCardDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T14:44:22.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "PagedResponse.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Responses\\PagedResponse.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Responses\\PagedResponse.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Responses\\PagedResponse.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Responses\\PagedResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T16:35:47.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "InsertUpdateUserDto.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Dtos\\InsertUpdateUserDto.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Dtos\\InsertUpdateUserDto.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Dtos\\InsertUpdateUserDto.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Dtos\\InsertUpdateUserDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T14:38:40.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "InsertUpdateNameCardTemplateDto.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Dtos\\InsertUpdateNameCardTemplateDto.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Dtos\\InsertUpdateNameCardTemplateDto.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Dtos\\InsertUpdateNameCardTemplateDto.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Dtos\\InsertUpdateNameCardTemplateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-10T08:22:13.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "NameCardTemplateDto.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Dtos\\NameCardTemplateDto.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Dtos\\NameCardTemplateDto.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Dtos\\NameCardTemplateDto.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Dtos\\NameCardTemplateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T03:54:27.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Demo-Grapesjs\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "D:\\Demo-F2tech\\Demo-Grapesjs\\Demo-Grapesjs\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "Demo-Grapesjs\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIAwwBUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T16:20:56.832Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -5,10 +5,9 @@ namespace Demo_Grapesjs.Services.Interfaces
 {
     public interface INameCardTemplateService
     {
-        Task<NameCardTemplate> CreateNameCardTemplate(NameCardTemplateDto nameCardTemplateDto);
-        Task<IEnumerable<NameCardTemplate>> GetNameCardTemplates();
-        Task<NameCardTemplate> GetNameCardTemplateById(Guid id);
-        Task DeleteNameCardTemplate (Guid id);
-        Task<NameCardTemplate> UpdateNameCardTemplate(UpdateNameCardTemplateDto updateNameCardTemplateDto);
+        Task<NameCardTemplate> NameCardTemplate_InsertUpdate(InsertUpdateNameCardTemplateDto nameCardTemplateDto, HttpContext httpContext);
+        Task<IEnumerable<NameCardTemplate>> NameCardTemplate_GetAll();
+        Task<NameCardTemplate> NameCardTemplate_GetById(string id);
+        Task NameCardTemplate_Delete (string id);
     }
 }

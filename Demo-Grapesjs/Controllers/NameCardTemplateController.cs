@@ -14,14 +14,19 @@ namespace Demo_Grapesjs.Controllers
         private readonly INameCardTemplateService _nameCardTemplateService;
         public NameCardTemplateController(INameCardTemplateService nameCardTemplateService) { _nameCardTemplateService = nameCardTemplateService; }
 
-
+        /// <summary>
+        /// Lấy tất cả các template
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("")]
         [AllowAnonymous]
-        public async Task<IActionResult> GetNameCardTemplates()
+        [ProducesResponseType( typeof(ApiResponse<object>),200)]
+        [ProducesResponseType(typeof(ApiResponse<object>), 400)]
+        public async Task<IActionResult> NameCardTemplate_GetAll()
         {
             try
             {
-                var nameCardTemplates = await _nameCardTemplateService.GetNameCardTemplates();
+                var nameCardTemplates = await _nameCardTemplateService.NameCardTemplate_GetAll();
                 var response = new ApiResponse<object>(nameCardTemplates, "OK", "Successfully");
                 return Ok(response);
             }
@@ -33,13 +38,21 @@ namespace Demo_Grapesjs.Controllers
             }
         }
 
+
+        /// <summary>
+        /// Lấy template theo id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         [AllowAnonymous]
-        public async Task<IActionResult> GetNameCardTemplateById([FromRoute] Guid id)
+        [ProducesResponseType(typeof(ApiResponse<object>), 200)]
+        [ProducesResponseType(typeof(ApiResponse<object>), 400)]
+        public async Task<IActionResult> NameCardTemplate_GetById([FromRoute] string id)
         {
             try
             {
-                var nameCardTemplate = await _nameCardTemplateService.GetNameCardTemplateById(id);
+                var nameCardTemplate = await _nameCardTemplateService.NameCardTemplate_GetById(id);
                 var response = new ApiResponse<object>(nameCardTemplate, "OK", "Successfully");
                 return Ok(response);
 
@@ -52,32 +65,20 @@ namespace Demo_Grapesjs.Controllers
         }
 
 
+        /// <summary>
+        /// Thêm hoặc cập nhật template
+        /// </summary>
+        /// <param name="insertUpdateNameCardTemplate"></param>
+        /// <returns></returns>
         [HttpPost("")]
         [AllowAnonymous]
-        public async Task<IActionResult> CreateNameCardTemplate(NameCardTemplateDto nameCardTemplateDto)
+        [ProducesResponseType(typeof(ApiResponse<object>), 200)]
+        [ProducesResponseType(typeof(ApiResponse<object>), 400)]
+        public async Task<IActionResult> NameCardTemplate_InsertUpdate(InsertUpdateNameCardTemplateDto insertUpdateNameCardTemplate)
         {
             try
             {
-                var nameCardTemplate = await _nameCardTemplateService.CreateNameCardTemplate(nameCardTemplateDto);
-                var response = new ApiResponse<object>(nameCardTemplate, "OK", "Successfully");
-                return Ok(response);
-
-            }
-            catch (Exception ex)
-            {
-                var response = new ApiResponse<object>(null, "ERROR", ex.Message);
-                return BadRequest(response);
-
-            }
-        }
-
-        [HttpPatch("")]
-        [AllowAnonymous]
-        public async Task<IActionResult> UpdateNameCardTemplate(UpdateNameCardTemplateDto updateNameCardTemplateDto)
-        {
-            try
-            {
-                var nameCardTemplate = await _nameCardTemplateService.UpdateNameCardTemplate(updateNameCardTemplateDto);
+                var nameCardTemplate = await _nameCardTemplateService.NameCardTemplate_InsertUpdate(insertUpdateNameCardTemplate, HttpContext);
                 var response = new ApiResponse<object>(nameCardTemplate, "OK", "Successfully");
                 return Ok(response);
             }
@@ -85,6 +86,7 @@ namespace Demo_Grapesjs.Controllers
             {
                 var response = new ApiResponse<object>(null, "ERROR", ex.Message);
                 return BadRequest(response);
+
             }
         }
     }

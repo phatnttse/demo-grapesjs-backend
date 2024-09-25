@@ -1,11 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace Demo_Grapesjs.Entities
 {
     public class User : BaseEntity
     {
-        [Key]
-        public Guid Id { get; set; }
         public string Avatar { get; set; } = string.Empty;
         public string CoverPhoto { get; set; } = string.Empty;
         public string FullName { get; set; } = string.Empty;
@@ -15,7 +14,9 @@ namespace Demo_Grapesjs.Entities
         public string Position { get; set; } = string.Empty;
         public string CompanyAddress { get; set; } = string.Empty;
         public string WebsiteUrl { get; set; } = string.Empty;
+        public string LinkedInUrl { get; set; } = string.Empty;
 
+        [JsonIgnore]
         public ICollection<UserNameCard>? UserNameCards { get; set; } 
 
     }
